@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        
+        var fruta = "abacate";
+        var preco = 8.50;
+        var valor = true;
+        var novoValor;
+
+        /* Esse typeof e como se fosse uma etiqueta das variaveis mostrando oq elas são, string,number,boolean e etc....
+        se eu tirar o typeof vai aparecer as variavel normal na tela */
+        document.write(typeof (fruta) + "<br>"); //String
+        document.write(typeof (preco) + "<br>"); //Number
+        document.write(typeof (valor) + "<br>"); // boolean
+        document.write(typeof (novoValor) + "<br>"); //undefined
+        
+        /*Aqui temos o window.prompt que seria uma janela automatica pegando toda a atenção do usuario
+        para que ele possa digitar algo, o JS e tão bom que tanto faz usar o window ou não no prompt
+        porque o JS ja se encarrega de encotrar essa função sozinho */
+        var nome = window.prompt("Digite seu nome: ");
+        document.write("Bem Vindo ao sistema " + nome + "<br23>");
+
+        var x;
+        var a = 9;
+        var b = 1.5;
+        var c = true;
+        var d = "abc";
+
+        /*No HTML, se você apertar a barra de espaço dez vezes seguidas no seu código, o navegador vai ignorar nove delas e mostrar apenas um espaço. O &nbsp; força o navegador a exibir o espaço em branco exatamente onde você o colocou.
+        Impedir a quebra de linha: Ele "gruda" duas palavras. Se você tem algo como 10 kg, e o 10 fica no fim da linha, o navegador pode jogar o kg para a linha de baixo.
+         Se você usar 10&nbsp;kg, o navegador entende que eles devem andar sempre juntos.*/
+        window.document.write("<h1> Tipos de variaveis (com typeof)</h1> <br>");
+        window.document.write("var x - &nbsp;" + typeof (x) + "<br>");
+        window.document.write("var a - &nbsp;" + typeof (a) + "<br>");
+        window.document.write("var b - &nbsp;" + typeof (b) + "<br>");
+        window.document.write("var c - &nbsp;" + typeof (c) + "<br>");
+        window.document.write("var d - &nbsp;" + typeof (d) + "<br>");
+
+        /*Aqui e o seguinte, eu dei o valor da variavel de 9 se essa condição fosse verdadeira "if", mostraria
+        a primeira opção que e maior que 10, mas como ela e falsa, esta mostrando a segunda opção pq 9 não e maio e nem igual a 10
+        if : significa se
+        else: significa se não*/
+        var hora = 9;
+        if(hora >= 10){
+            document.write("Hora maior que 10: <br>");
+        }else{
+            document.write("Hora menor que 10 <br>");
+        }
+
+        
+        document.write("<h1>Operadores aritmeticos</h1><br>");
+        var f = 1 
+        var g = 2
+        var h = 3
+
+        document.write((f + g) + "<br>"); //Adição = 3
+        document.write((f - g) + "<br>"); //Subtração = -1
+        document.write((f * g) + "<br>"); //Multiplicação = 2
+        document.write((g / f) + "<br>"); //Divisão = 2
+        document.write((h % g) + "<br>"); //Resto 3/1 Resto 1
+
+        document.write("<h1>Operadores Relacionais</h1><br>");
+        var r1 = 1
+        var r2 = 2
+
+        document.write((r1 >  r2 ) + "<br>"); //False
+        document.write((r1 >= r2 ) + "<br>"); //False
+        document.write((r1 <  r2 ) + "<br>"); //True
+        document.write((r1 <= r2 ) + "<br>"); //True
+        document.write((r1 == r1 ) + "<br>"); //True
+        //Sinal de Exclamação siginifixa diferente 
+        document.write((r1 != r2 ) + "<br>"); //True
+
+        /*Na conjunção o resultado será Verdadeiro somente se todas
+        as preposições forem verdadeiras*/
+        document.write("<h1>Conjução</h1>");
+        document.write(true && true);
+        document.write("<br>");
+        document.write(true && false);
+        document.write("<br>");
+        document.write(false && true);
+        document.write("<br>");
+        document.write(false && false);
+        document.write("<br>");
+
+        /*Na disjunção o resultado será Falso somente se todas as preposições forem falsas*/
+        document.write("<h1>Disjunção</h1>");
+        document.write(true || true);
+        document.write("<br>");
+        document.write(true || true);
+        document.write("<br>");
+        document.write(true || true);
+        document.write("<br>");
+        document.write(true || true);
+        document.write("<br>");
+
+        //Na Nwgação o resultado é o contrário da proposição informada
+        document.write("<h1>Negação</h1>");
+        document.write(!true  );
+        document.write("<br>" );
+        document.write(!false );
+        document.write("<br>" );
+
+    </script>
+</body>
+</html>
