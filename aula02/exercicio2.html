@@ -13,7 +13,7 @@
 
 
     <script>
-
+        /*
         var aluno = prompt("Dgite seu nome");
         window.alert("Bem Vindo a atividade de algoritimos aluno " + aluno);
 
@@ -24,6 +24,18 @@
             document.write("Votação obrigatoria aluno " + aluno + " pois você tem mais de 18");
         }else{
             document.write("Votação bloqueada para o aluno " + aluno + " pois voce e menor de idade");
+        }*/
+
+        var pessoa = prompt("Digite Seu nome: ");
+        window.alert("Bem vindo ao sistema de votação " + pessoa);
+
+        var anos = Number(prompt("Digite Sua idade: "));
+        document.write("<h1>Sistema de Votação iniciada</h1><br>");
+
+        if(anos > 16 && anos <= 65){
+            document.write("Votação liberada para " + pessoa );
+        }else{
+            document.write("Votação bloqueada para " + pessoa);
         }
 
 
