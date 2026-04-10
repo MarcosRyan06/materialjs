@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 04</title>
+</head>
+<body>
+    <h1>O Super Desafio: Totem de Aeroporto Pro</h1>
+    <h2>Neste desafio, o programa vai primeiro identificar quem está acessando o totem e depois perguntar o destino, tratando os textos para evitar erros.</h2>
+    <ol>
+        <li>Identificação de Acesso: Peça para o usuário digitar o cargo (ex: "Piloto", "Comissário" ou "Passageiro").
+        </li>
+        <li>Tratamento de String: Use .toLowerCase() em todas as entradas para que o código aceite "PILOTO", "piloto" ou "Piloto".
+        </li>
+        <li>Switch de Nível de Acesso:
+            <ul>
+                <li>Se for "piloto" ou "comissário": Exiba "Acesso liberado à área de tripulação. Boa viagem!".</li>
+                <li>Se for "passageiro": O código deve abrir um segundo prompt perguntando o destino.</li>
+            </ul>
+        </li>
+        <li>Switch de Destino (apenas para passageiros):
+            <ul>
+                <li>"são paulo" ou "sao paulo": "Portão A - Embarque imediato".</li>
+                <li>"nova york": "Portão B - Aguarde a chamada".</li>
+                <li>"paris": "Portão C - Voo atrasado em 30 min".</li>
+                <li>Default: "Destino não listado no totem. Vá ao guichê físico".</li>
+            </ul>
+        </li>
+        <li>Default Geral: Se o cargo não for nenhum dos três, exiba "Acesso negado. Procure a segurança".
+        </li>
+    </ol>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="desafio04.js"></script>
+</body>
+</html>
